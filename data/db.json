@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Black Clover",
+      "author": "Yami Sukehiro",
+      "genre": "action",
+      "price": 30000,
+      "year": 2020
+    },
+    {
+      "id": 2,
+      "title": "Naruto Shippuden",
+      "author": "Hatake Kakashi",
+      "genre": "advanture",
+      "price": 24000,
+      "year": 2010
+    },
+    {
+      "id": 3,
+      "title": "Fairy Tail",
+      "author": "Mystogann",
+      "genre": "magic",
+      "price": 26000,
+      "year": 2018
+    }
+  ]
+}
