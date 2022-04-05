@@ -13,3 +13,23 @@
 .advanture{
   @apply text-green-700
 }
+
+.magics{
+  @apply bg-blue-200
+}
+
+.actions{
+  @apply bg-red-200
+}
+
+.advantures{
+  @apply bg-green-200
+}
+
+.inputt{
+  @apply p-2 w-full lg:w-36 font-semibold text-xs text-gray-800 outline-none rounded-sm mr-3 mb-3 block lg:inline
+}
+
+.hapus{
+  @apply absolute py-1 px-2 rounded-full top-2 right-2 text-xs font-semibold text-white bg-gray-600 cursor-pointer
+}

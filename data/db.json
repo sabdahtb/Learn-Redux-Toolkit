@@ -23,6 +23,70 @@
       "genre": "magic",
       "price": 26000,
       "year": 2018
+    },
+    {
+      "id": 4,
+      "title": "Mahou Gakuin",
+      "author": "Anos Voldigod",
+      "genre": "magic",
+      "price": 21000,
+      "year": 2015
+    },
+    {
+      "id": 5,
+      "title": "Grimore Heart",
+      "author": "Flegoleon",
+      "genre": "magic",
+      "price": 31000,
+      "year": 2012
+    },
+    {
+      "id": 6,
+      "title": "Hunter x Hunter",
+      "author": "Killua Zoldick",
+      "genre": "advanture",
+      "price": 30000,
+      "year": 2011
+    },
+    {
+      "id": 7,
+      "title": "Dragon Ball",
+      "author": "Vegeta",
+      "genre": "action",
+      "price": 22000,
+      "year": 2012
+    },
+    {
+      "id": 8,
+      "title": "Attack on Titan",
+      "author": "Eren Yaeger",
+      "genre": "action",
+      "price": 37000,
+      "year": 2021
+    },
+    {
+      "id": 9,
+      "title": "SK8",
+      "author": "Rimuru Sama",
+      "genre": "action",
+      "price": 22000,
+      "year": 2014
+    },
+    {
+      "title": "maman superman",
+      "author": "kolan ganteng",
+      "genre": "action",
+      "price": "120000",
+      "year": "2022",
+      "id": 10
+    },
+    {
+      "title": "Kolan Cari Jodoh",
+      "author": "Maman Kece",
+      "genre": "action",
+      "price": "120500",
+      "year": "2022",
+      "id": 11
     }
   ]
 }
