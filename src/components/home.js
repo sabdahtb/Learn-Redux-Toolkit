@@ -3,11 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
 import { bookSelector, delBook, getBooks } from "../features/bookSlice";
 import Add from "./add";
+import Edit from "./edit";
 
 const Home = () => {
   const dispatch = useDispatch();
   const books = useSelector(bookSelector.selectAll);
   const [tambah, setTambah] = useState(false);
+  const [book, setBook] = useState({});
+  const [edit, setEdit] = useState(false);
 
   const handleDelete = (id, title) => {
     Swal.fire({
@@ -31,6 +34,12 @@ const Home = () => {
     });
   };
 
+  const tampilEdit = (book) => {
+    setEdit(false);
+    setBook(book);
+    setEdit(true);
+  };
+
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
@@ -50,6 +59,7 @@ const Home = () => {
       </button>
 
       {tambah ? <Add setTambah={setTambah} /> : ""}
+      {edit ? <Edit book={book} edit={edit} setEdit={setEdit} /> : ""}
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
         {books.map((book) => (
@@ -67,6 +77,12 @@ const Home = () => {
             >
               Price : Rp.{book.price}
             </button>
+            <div
+              className="text-xs font-semibold text-orange-500 italic cursor-pointer mx-1 mt-2"
+              onClick={() => tampilEdit(book)}
+            >
+              Edit Book
+            </div>
             <span
               className="hapus"
               onClick={() => handleDelete(book.id, book.title)}

@@ -11,10 +11,10 @@
     {
       "id": 2,
       "title": "Naruto Shippuden",
-      "author": "Hatake Kakashi",
+      "author": "Uciha Itachi",
       "genre": "advanture",
       "price": 24000,
-      "year": 2010
+      "year": "2011"
     },
     {
       "id": 3,
@@ -45,7 +45,7 @@
       "title": "Hunter x Hunter",
       "author": "Killua Zoldick",
       "genre": "advanture",
-      "price": 30000,
+      "price": "31000",
       "year": 2011
     },
     {
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "title": "Attack on Titan",
-      "author": "Eren Yaeger",
+      "author": "Mikasa Ackerman",
       "genre": "action",
       "price": 37000,
       "year": 2021
@@ -76,7 +76,7 @@
       "title": "maman superman",
       "author": "kolan ganteng",
       "genre": "action",
-      "price": "120000",
+      "price": "35000",
       "year": "2022",
       "id": 10
     },
@@ -84,7 +84,7 @@
       "title": "Kolan Cari Jodoh",
       "author": "Maman Kece",
       "genre": "action",
-      "price": "120500",
+      "price": "113000",
       "year": "2022",
       "id": 11
     }

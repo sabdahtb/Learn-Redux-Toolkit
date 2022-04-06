@@ -20,6 +20,20 @@ export const delBook = createAsyncThunk("books/delBook", async (id) => {
   return id;
 });
 
+export const editBook = createAsyncThunk(
+  "books/editBook",
+  async ({ id, title, author, genre, price, year }) => {
+    const res = await axios.patch(`http://localhost:4000/books/${id}`, {
+      title,
+      author,
+      genre,
+      price,
+      year,
+    });
+    return res.data;
+  }
+);
+
 const bookEntity = createEntityAdapter({
   selectId: (book) => book.id,
 });
@@ -36,6 +50,12 @@ const bookSlice = createSlice({
     },
     [delBook.fulfilled]: (state, action) => {
       bookEntity.removeOne(state, action.payload);
+    },
+    [editBook.fulfilled]: (state, action) => {
+      bookEntity.updateOne(state, {
+        id: action.payload.id,
+        updates: action.payload,
+      });
     },
   },
 });
